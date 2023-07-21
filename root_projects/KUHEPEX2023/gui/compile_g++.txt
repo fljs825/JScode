@@ -1,0 +1,20 @@
+
+// 1. Construct class in header file : e.g TextEntryWindow.h
+
+// 2. Construct details in cxx file : e.g TextEntryWindow.cxx
+//		You should include main() function to compile
+//		You should construct "constructor" and "destructor"
+//		"Destructor" : TextEntryWindow::~TextEntryWindow () {
+//					 : your TGMainFrame -> Cleanup();
+//					 : delete your TGMainFrame
+
+// 3. You should make LinkDef.h file
+
+// 4. Then first compile :
+rootcint -f TextEntryWindow_Dict.cxx -c TextEntryWindow.h LinkDef.h
+(rootcling)
+
+// 5. Then final compile:
+g++ -o drs_proto_data_taking TextEntryWindow.cxx TextEntryWindow_Dict.cxx `root-config --cflags --glibs`
+
+// 6. Then you get file !
