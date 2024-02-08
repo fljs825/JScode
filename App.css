@@ -1,0 +1,121 @@
+
+.App {
+  text-align: center;
+}
+
+body{
+    font-family: 'Protest Riot', sans-serif;
+    background-color: hsl(0, 0%, 15%);
+}
+.contact_info{
+    background-color: hsl(0, 0%, 30%);
+    display: grid;
+}
+.menubox {
+    display: flex;
+}
+.menu {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.mainbody{
+    margin-left: 250px;
+    margin-right: auto;
+    margin-top: 85px;
+    background-color: hsl(0,0%,15%);
+    color: white;
+}
+nav {
+  float: left;
+  display: block;
+  width: 250px;
+  background: hsl(0, 0%, 10%);
+  overflow: auto;
+  position: fixed;
+  height: 100%;
+  margin-top: 0px;
+  color: white;
+}
+
+.homepage {
+    text-decoration-line: none;
+  color : white;
+  cursor: pointer;
+}
+.homepage:visited {
+  color : white;
+}
+.homepage:hover {
+  color : white;
+}
+.homepage:active {
+  color : white;
+}
+a {
+    color : white;
+}
+.menubox_href {
+    text-decoration-line: none;
+    color : black;
+    cursor: pointer;
+}
+
+.modal {
+    padding: 20px;
+    background: #eee;
+}
+
+.black-nav {
+    background: black;
+    width: 100%;
+    display: flex;
+    color: white;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.list {
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
